@@ -1,7 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+redux
+создаём или получаем с сервера файлы и записываем в базу (Car.js, Music.js)
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+грузим данные в общие хранилище - combineReducers (contain_reduce.js)
+
+создаём в index.js --- const store = createStore(ссылка на combineReducers);
+
+создаём в index.js с атрибутом store={...} и помещаем туда созданное хранилище store
+
+в App.js создаем контейнеры
+
+в Count.js создаём функцию которая будет брать из хранилища свойства в свой ключ и функцию Где импорт. метод-редакса bindActionCreators(..., dispatch) вызывает при событии (act_outNameCar.jsx) где хранится тип и свойство из события. Эти функции конектятся редакс-методом export default connect (mapStateToProps,mapDispatchToProps)(Count); что бы связатсья с хранилищем
+
+в showList из ключа this.props.cars вызываем свойства и делаем список и вешаем onClick на
+
+, передаем свойства item из .map() в хранилище this.props.outNameCar(item)
+в App.js вызываем Details и в функции mapStateToProps с ключом CarActive из (contain_reduce.js) который ведет на (CarActive.js) где switch выбирает по type нужные данные
+
+если params = null выводим что то (для начального состояния), а потом {this.props...KEY...name} берет отсортированное событие
 
 ## Table of Contents
 
