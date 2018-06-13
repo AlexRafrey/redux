@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form{
+  width: 200px;
+  margin: 50px auto;
+  text-align: center;
+  &-input{
+    margin: 0;
+    min-width: 200px;
+    border: 0px;
+    border-bottom: 1px solid goldenrod;
+    outline: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  &-btn{
+    margin-top: 10px;
+  }
+}
